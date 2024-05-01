@@ -106,7 +106,7 @@ public:
 	void Draw(void) {
 		IMAGE imgtemp;
 		if (Angle != 0) {
-			rotateimage(&imgtemp, &img, (double)(PI / (180 / Angle)));
+			rotateimage(&imgtemp, &img, Angle);
 		}
 		putimage(PosX, PosY, &imgtemp);
 	}
